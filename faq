@@ -1,0 +1,753 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+a {
+    color: #3f515a;
+    transition: 0.3s;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff8f91;
+    text-decoration: none;
+}
+a:focus {
+    box-shadow: none;
+    outline: none;
+}
+.hl-btn {
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    background: linear-gradient(45deg, #fbbb8b, #ff8f91);
+    color: #fff;
+    outline: none;
+    padding: 0px 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-size: 16px;
+    position: relative;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 5%);
+}
+.hl-btn:hover {
+    background: linear-gradient(45deg, #ff8f91, #fbbb8b);
+    color: #fff;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    transform: translateY(-5px);
+}
+.hl-heading-title {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 30px 0 0;
+    font-weight: 600;
+    color: #ff8f91;
+}
+#collapse-button .collapse-button-label {
+    font-size: 14px;
+}
+/*welcome css start*/
+.hl-main-wraper {
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #3f515a;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.hl-welcome-wrap {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.hl-welcome-wrap h1 {
+    margin-bottom: 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+.hl-welcome-wrap h1 span {
+    color: #ff8f91;
+}
+.hl-card-body {
+    background: #fff9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+.hl-category-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 5%);
+}
+.hl-purple-bg {
+    background: linear-gradient(45deg, #bd9de2, #ab63f3);
+}
+.hl-blue-bg {
+    background: linear-gradient(45deg, #66a6e3, #686deb);
+}
+.hl-orange-bg {
+    background: linear-gradient(45deg, #ff8f91, #fbbb8b);
+}
+.hl-pink-bg {
+    background: linear-gradient(45deg, #ecbaef, #f363d4);
+}
+.hl-category-box h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    color: #fff;
+    position: relative;
+}
+.hl-category-box .hl-btn {
+    margin-top: 20px;
+    background: #fff;
+    color: #fbbb8b;
+}
+.hl-category-box h3:after,.hl-category-box h3:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 60px;
+    margin: auto;
+    background: #fff;
+    height: 1px;
+    top: -8px;
+}
+.hl-category-box h3:after {
+    top: -5px;
+    width: 90px;
+}
+/*welcome css end*/
+/*hotel tabs start*/
+.hl-hotal-tabs ul {
+    padding: 0 0 30px;
+    margin: 0px;
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+.hl-hotal-tabs ul li {
+    display: inline-block;
+    margin: 2px 10px 2px 0;
+}
+.hl-hotal-tabs ul li:last-child {
+    margin-right: 0;
+}
+.hl-hotal-tabs ul li a {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: block;
+    border: 1px solid #ffecec;
+}
+.hl-hotal-tabs ul li a:hover,
+.hl-hotal-tabs ul li .handily_active {
+    border-color: #ff8f91;
+    color: #ff8f91;
+}
+.hl-hotal-tabs ul li a img {
+    width: 20px;
+    margin-right: 10px;
+}
+/*hotel tabs end*/
+/* data table start */
+.widefat thead td, .widefat thead th {
+    border-bottom: none;
+}
+.widefat tfoot td, .widefat tfoot th {
+    border-top: none;
+}
+.hl-table-wrapper {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+table.widefat {
+    border: 1px solid #eee;
+    box-shadow: none;
+    overflow-x: auto;
+    min-width: 100%;
+    width: auto;
+}
+.alternate, .striped>tbody>:nth-child(odd), ul.striped>:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.widefat td, .widefat th,
+th.sortable a, th.sorted a {
+    padding: 15px;
+}
+.hl-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+}
+.hl-table-header .hl-heading-title {
+    margin-top: 0px;
+}
+.hl-table-header {
+    margin-top: 40px;
+}
+.wp-core-ui .hl-card-body .button {
+    color: #ff9092;
+    border-color: #ff9092;
+    background: #ffffff;
+    min-height: 38px;
+}
+.wp-core-ui .hl-card-body .button:focus {
+    box-shadow: 0 0 0 1px #ff9092;
+}
+.wp-core-ui .hl-card-body select, .hl-card-body input, .hl-card-body select, .hl-card-body textarea {
+    border-color: #eeeeee;
+    min-height: 40px;
+}
+.hl-card-body form.user-form-listing {
+    padding-top: 30px;
+}
+.hl-card-body .tablenav .displaying-num {
+    font-size: 14px;
+}
+.hl-card-body .tablenav .tablenav-pages {
+    display: flex;
+    align-items: center;
+}
+.hl-card-body span.pagination-links {
+    display: flex;
+    grid-gap: 5px;
+    align-items: center;
+}
+.hl-card-body .pagination-links span,
+.hl-card-body .pagination-links a {
+    line-height: 30px!important;
+    height: 30px!important;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px!important;
+}
+.hl-card-body .pagination-links span.screen-reader-text {
+    display: none!important;
+    width: 0;
+    font-size: 0;
+}
+.hl-card-body .pagination-links .tablenav-paging-text {
+    margin-left: 10px;
+}
+.hl-card-body .widefat tbody th.check-column {
+    padding-top: 16px;
+}
+.widefat thead input[type=checkbox],
+.hl-card-body input[type=checkbox] {
+    width: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+}
+.hl-card-body input[type=checkbox]:checked::before {
+    filter: brightness(0.5);
+}
+.hl-card-body input[type=checkbox]:focus {
+    border-color: #ff9092;
+    box-shadow: 0 0 0 1px #ff9092;
+}
+.column-actions a {
+    display: inline-block;
+    border: 1px solid #ff8f91;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+.tablenav .actions {
+    margin-bottom: 8px;
+}
+td.column-status span {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+td.column-status .hl-status-active {
+    background: #8bc34a;
+}
+td.column-status .hl-status-deactivate {
+    background: #f44336;
+}
+td.room_price {
+    font-weight: 600;
+    font-size: 14px;
+}
+tfoot {
+    border-top: 1px solid #f9f9f9;
+}
+.widefat th {
+    font-weight: 500;
+}
+th#customer_name,
+th#payment_status,
+th#adults,
+th#children,
+th#payment_amount {
+    width: 105px;
+}
+th#requirement,
+th#requests,
+td.requirement,
+td.requests {
+    width: 200px;
+    white-space: normal;
+}
+/* data table end */
+/* nav tab start */
+.hl-vertical-tab {
+    display: flex;
+    margin-top: 40px;
+}
+.hl-vertical-tab .nav {
+    display: flex;
+    flex-direction: column;
+}
+.hl-vertical-tab .nav-link {
+    color: #ff8f91;
+    text-align: center;
+    border: none;
+    margin-bottom: 10px;
+    background: #f3f3f3;
+    font-size: 15px;
+    border-radius: 4px;
+    min-width: 150px;
+}
+.hl-vertical-tab .nav-link:last-child {
+    margin-bottom: 0;
+}
+.hl-vertical-tab .nav-link.active {
+    color: #fff;
+    background: linear-gradient(45deg, #fbbb8b, #ff8f91);
+}
+.hl-vertical-tab .tab-content {
+    width: calc(100% - 200px);
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.hl-vertical-tab .tab-content ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+}
+.hl-vertical-tab .tab-content ul li label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.hl-vertical-tab .tab-content ul li  input {
+    width: 100%;
+    font-size: 14px;
+}
+.hl-vertical-tab .tab-content .hl-btn {
+    margin-top: 20px;
+}
+.hl-card-body .hl-vertical-tab select,
+.hl-card-body .hl-vertical-tab input,
+.hl-card-body .hl-vertical-tab textarea {
+    width: 100%;
+    max-width: 100%;
+}
+/* nav tab end */
+/* loader start */
+.hl-preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background: rgb(0 0 0 / 75%);
+    z-index: 99999;
+}
+.hl-preloader-box  {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/* loader end */
+/* data analytics */
+.hl-data-analytics {
+    margin-top: 40px;
+}
+.hl-category-box h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff8f91;
+    min-width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0px 7px 10px 2px rgb(0 0 0 / 15%);
+    flex-direction: column;
+}
+.hl-category-box h2 span {
+    font-size: 18px;
+    display: block;
+}
+.hl-category-box h3 {
+    margin-top: 35px;
+}
+.hl-data-analytics .hl-category-box h3:before {
+    top: -15px;
+}
+.hl-data-analytics .hl-category-box h3:after {
+    top: -12px;
+}
+/* data analytics */
+/* scrollbar-track start*/
+.hl-table-wrapper::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgb(255 228 228);
+	background-color: #fff9f9;
+}
+.hl-table-wrapper::-webkit-scrollbar
+{
+	height: 5px;
+}
+.hl-table-wrapper::-webkit-scrollbar-thumb
+{
+	background-color: #ff8f91;
+}
+/* scrollbar-track end*/
+/* custom css start */
+.hl-gallery-img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 25px;
+}
+.hl-gallery-img-wrap .field_left {
+    display: none;
+}
+.hl-gallery-img-wrap .field_row {
+    display: flex;
+    grid-gap: 10px;
+}
+.hl-gallery-img-wrap .field_right input {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.hl-gallery-img-wrap .image_wrap img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+.hl-room-setting-wrap tr {
+    border-bottom: 1px solid #eee;
+}
+.hl-room-setting-wrap tr:last-child {
+    border: none;
+}
+.hl-room-setting-wrap td {
+    width: calc(100% - 20%);
+    padding: 15px 10px;
+}
+.hl-room-setting-wrap th {
+    width: 20%;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.hl-room-setting-wrap input,
+.hl-room-setting-wrap select {
+    width: 100%;
+    border: 1px solid #eee;
+    min-height: 40px;
+}
+.hl-room-setting-wrap td div {
+    position: relative;
+    margin-bottom: 10px;
+}
+.hl-room-setting-wrap td a.remove_button {
+    top: 8px;
+    position: absolute;
+    right: 8px;
+    background: #ff9092;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.datepicker td, .datepicker th,
+.datetimepicker table tr td span,
+.ui-datepicker-calendar td a,.ui-datepicker-calendar th a,
+.ui-datepicker-calendar th,
+.ui-datepicker-prev, .ui-datepicker-next,.ui-datepicker-title {
+    background: #f9f9f9;
+    margin: 2px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0;
+    line-height: 30px;
+    height: 30px;
+    color: #3f515a;
+    text-align: center;
+    border-radius: 4px;
+}
+table.ui-datepicker-calendar tr {
+    display: flex;
+    justify-content: space-between;
+}
+.datepicker td.day, .datepicker th,
+.ui-datepicker-calendar td,
+.ui-datepicker-calendar td a,
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar th a,
+.ui-datepicker-prev, .ui-datepicker-next {
+    width: 30px;
+}
+.datepicker .datepicker-switch {
+    width: calc(100% - 72px);
+}
+.dropdown-menu {
+    border: 1px solid #eee;
+}
+.ui-datepicker {
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+.ui-datepicker-header {
+    display: flex;
+    justify-content: center;
+}
+.datepicker-dropdown:before {
+    border-bottom-color: #eee;
+}
+.datepicker-dropdown.datepicker-orient-top:before {
+    border-top: 7px solid #eee;
+}
+.datepicker th:hover,
+.datepicker table tr td.day.focused, .datepicker table tr td.day:hover,
+.datepicker .datepicker-switch:hover, .datepicker .next:hover,
+.datepicker .prev:hover, .datepicker tfoot tr th:hover,
+.datepicker table tr td.active,
+.datepicker table tr td span.focused, .datepicker table tr td span:hover,
+.datetimepicker table tr td span.active.active,
+.datetimepicker table tr td fieldset span:hover,
+.datetimepicker table tr td span.active.active:hover,
+.ui-datepicker-current-day a,.ui-datepicker-calendar td a:hover {
+    background: linear-gradient( 45deg, #fbbb8b, #ff8f91);
+    color: #fff;
+}
+.datepicker-months td,
+.datepicker-centuries td,
+.datepicker-years td,
+.datepicker-decades td {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.datepicker table tr td.old:hover,
+.datepicker table tr td.disabled:hover {
+    background: #f9f9f9;
+    color: #999;
+}
+input.datepicker {
+    padding: 0px 10px;
+}
+.datetimepicker-minutes thead, .datetimepicker-hours thead {
+    display: none;
+}
+.datetimepicker-hours fieldset,
+.datetimepicker-minutes fieldset {
+    padding: 15px;
+    min-width: 200px;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.datetimepicker .datetimepicker-hours fieldset legend,
+.datetimepicker .datetimepicker-minutes fieldset legend {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px!important;
+    margin-left: 0;
+}
+.datetimepicker-hours fieldset:last-child,
+.datetimepicker-minutes fieldset:last-child {
+    margin-bottom: 0;
+}
+.datetimepicker {
+    padding: 0;
+}
+.datetimepicker[class*=" datetimepicker-dropdown"]:before {
+    border-bottom-color: #eee;
+}
+.datetimepicker-hours,
+.datetimepicker-minutes {
+    padding: 20px;
+}
+.hl-qr-wrap form,
+.hl-qr-box {
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.hl-qr-wrap form ul,
+.hl-qr-box ul {
+    padding: 0;
+    margin: 0;
+}
+.hl-qr-wrap form ul li label,
+.hl-qr-box ul li {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.hl-qr-wrap form ul li {
+    margin-bottom: 10px;
+}
+.hl-qr-wrap form ul li:last-child,
+.hl-qr-box ul li:last-child {
+    margin-bottom: 0px;
+}
+.hl-qr-wrap form ul li input {
+    width: 100%;
+    font-size: 14px;
+}
+.hl-qr-box {
+    text-align: center;
+    position: relative;
+}
+.hl-qr-wrap .hl-btn {
+    margin-top: 15px;
+}
+.hl-qr-box ul #barcode {
+    margin-top: 20px;
+}
+.hl-qr-box ul li.hl-qr-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.hl-qr-print-btn.hl-btn {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.hl-social-network-list {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 30px;
+}
+.hl-social-network-list ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+}
+.hl-social-network-list ul li a {
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    padding: 25px 20px;
+    border-radius: 10px;
+    display: block;
+}
+.hl-social-network-list ul li a span {
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+}
+.hl-social-network-list ul li a:hover {
+    border-color: #ff8f91;
+    color: #ff8f91;
+}
+.widefat .column-email {
+    max-width: 300px;
+    white-space: normal;
+    width: 100%;
+}
+th.sortable a, th.sorted a {
+    display: flex;
+}
+.tab-content .hl-table-header {
+    margin-top: 0;
+    background: #fff9f9;
+}
+.hl-vertical-tab .tab-content #h1-form-calendar-setting input {
+    width: auto;
+}
+.tab-content .hl-heading-title {
+    font-size: 24px;
+}
+.tab-content .hl-table-header .hl-btn {
+    margin: 0;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.tablenav {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.hl-qr-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+}
+tr.no-items td.colspanchange {
+    text-align: center;
+}
+#master-row{
+  display:none;
+}
+.wp-core-ui .wp-editor-container input {
+    width: auto;
+}
+.hl-vertical-tab .tab-content #cafe_color_option ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* custom css end */
+
+@media screen and (max-width:1499px) {
+    .hl-social-network-list ul {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (max-width:991px) {
+    .hl-social-network-list ul {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:767px) {
+    .hl-social-network-list ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:480px) {
+    .hl-social-network-list ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
